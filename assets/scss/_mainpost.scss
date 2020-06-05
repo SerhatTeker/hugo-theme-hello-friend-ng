@@ -3,7 +3,7 @@
   max-width: 800px;
   text-align: left;
   padding: 20px;
-  margin: 20px auto;
+  margin: 10px;
 
   @media #{$media-size-tablet} {
     max-width: 660px;
@@ -54,6 +54,15 @@
     margin-top: 30px;
   }
 
+  &-info {
+    margin-top: 40px;
+  }
+
+  &-portrait {
+    float: left;
+    padding-right: 20px;
+  }
+
   &-cover {
     border-radius: 8px;
     margin: 40px -50px;
@@ -82,4 +91,5 @@
       margin-bottom: 20px;
     }
   }
+
 }
