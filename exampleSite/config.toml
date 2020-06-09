@@ -38,6 +38,11 @@ disableHugoGeneratorInject = false
 
 [author]
   name = "Jane Doe"
+  mail = "john.doe@example.com"
+  # Change default. default is "/"
+  profile_url = ""
+  # Change default. default is "about/"
+  about_url = ""
 
 [blackfriday]
   hrefTargetBlank = true
