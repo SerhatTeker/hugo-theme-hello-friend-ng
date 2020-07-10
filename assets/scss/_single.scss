@@ -32,7 +32,7 @@
     display: block;
     margin-bottom: 20px;
     font-size: 1rem;
-    opacity: .5;
+    opacity: 0.5;
 
     a {
       text-decoration: none;
@@ -62,7 +62,7 @@
     @include dimmed;
 
     p {
-      margin: .8em 0;
+      margin: 0.8em 0;
     }
 
     a {
@@ -74,14 +74,14 @@
     }
 
     svg {
-      margin-right: .8em;
+      margin-right: 0.8em;
     }
 
     .tag {
-      margin-right: .5em;
+      margin-right: 0.5em;
 
       &::before {
-        content: "#"
+        content: "#";
       }
     }
 
@@ -114,10 +114,10 @@
       padding: 5px 10px;
       background: $light-background;
       color: $light-color-secondary;
-      font-size: .8rem;
+      font-size: 0.8rem;
       text-transform: uppercase;
       text-decoration: none;
-      letter-spacing: .1em;
+      letter-spacing: 0.1em;
       z-index: 1;
 
       .dark-theme & {
