@@ -4,7 +4,7 @@
 
 ## General informations
 
-This theme was highly inspired by the
+This theme based on
 [hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-friend-ng). A lot
 of kudos for his great work.
 
