@@ -2,7 +2,7 @@
     <main aria-role="main">
         <div>
             {{ if .Site.Params.portrait.path }}
-               <img src="{{ .Site.Params.portrait.path }}" class="circle" alt="{{ .Site.Params.portrait.alt }}" />
+               <img src="{{ .Site.Params.Portrait.Path }}" class="circle" alt="{{ .Site.Params.Portrait.Alt }}" style="max-width:{{ .Site.Params.Portrait.MaxWidth }}" />
             {{ end }}
 
             <h1>{{ .Site.Title }}</h1>
