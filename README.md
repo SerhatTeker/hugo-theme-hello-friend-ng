@@ -1,10 +1,12 @@
 # Hello Friend NG
 
-![Hello Friend NG](https://dsh.re/2bd45)
+![Hello Friend NG](./docs/screenshots/theme-main.png)
 
 ## General informations
 
-This theme was highly inspired by the [hello-friend](https://github.com/panr/hugo-theme-hello-friend) and [hermit](https://github.com/Track3/hermit). A lot of kudos for theier great work.
+This theme was highly inspired by the
+[hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-friend-ng). A lot
+of kudos for his great work.
 
 ---
 ## Table of Contents
@@ -174,15 +176,20 @@ Either you comment it out completely or you write the following in
 
 ## How to edit the theme
 
-Just edit it. You don't need any node stuff. ;)
+Just edit it. You don't need any node stuff.
 
 ## Sponsoring
 
 If you like my work and if you think this project is worth to support it, just <br />
-<a href="https://www.buymeacoffee.com/djordjeatlialp" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-green.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
+<a href="https://www.buymeacoffee.com/serhatteker" target="_blank"><img src="https://res.cloudinary.com/panr/image/upload/v1579374705/buymeacoffee_y6yvov.svg" alt="Buy Me A Coffee" ></a>
 
 ## Licence
 
-Copyright © 2019-2020 Djordje Atlialp
+Copyright © 2020 Serhat Teker
 
-The theme is released under the MIT License. Check the [original theme license](https://github.com/rhazdon/hugo-theme-hello-friend-ng/blob/master/LICENSE.md) for additional licensing information.
+The theme is released under the MIT License. Check the [original theme license](https://github.com/serhatteker/hugo-theme-hello-friend-ng/blob/master/LICENSE.md) for additional licensing information.
+
+## Acknowledgments
+- **Radosław Kozieł** - *Initial works* - [Panr](https://github.com/panr)
+- **Track3** - *Initial works* - [Track3](https://github.com/Track3/hermit)
+- **Djordje Atlialp** - *Based on* - [Rhazdon](https://github.com/rhazdon)
