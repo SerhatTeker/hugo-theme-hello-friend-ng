@@ -11,4 +11,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Changelog
 
 ### Changed
-- In order to make the image handling more consistent, the `cover` tag does not force the image to live in `/img/` anymore. [!131](https://github.com/rhazdon/hugo-theme-hello-friend-ng/pull/131).
+- In order to make the image handling more consistent, the `cover` tag does not force the image to live in `/img/` anymore. [!131](https://github.com/serhatteker/hugo-theme-hello-friend-ng/pull/131).
