@@ -37,6 +37,11 @@
     a {
       text-decoration: none;
     }
+    a:hover {
+      border-bottom: none;
+      text-shadow: -1px -1px 0 $index-title-color, 0 -2px 0 $index-title-drop,
+        2px 2px 1px $index-title-drop, 4px 4px 1px $index-title-drop !important;
+    }
   }
 
   &-tags {
@@ -60,6 +65,10 @@
 
   &-info {
     margin-top: 40px;
+
+    a:hover {
+      border-bottom: 1px solid white;
+    }
   }
 
   &-portrait {
