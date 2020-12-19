@@ -271,6 +271,12 @@ ol ol {
   justify-content: center;
   margin: 0;
 
+  p {
+    a:hover {
+      border-bottom: 1px solid white;
+    }
+  }
+
   @media #{$media-size-phone} {
     margin-top: 0;
   }
