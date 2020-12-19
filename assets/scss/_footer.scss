@@ -3,6 +3,10 @@
   flex-grow: 0;
   color: $light-color-secondary;
 
+  a:hover {
+    border-bottom: 1px solid white;
+  }
+
   &__inner {
     display: flex;
     align-items: center;
@@ -33,8 +37,8 @@
       padding: 0 5px;
 
       @media #{$media-size-tablet} {
-          content: "";
-          padding: 0;
+        content: "";
+        padding: 0;
       }
     }
 
@@ -42,7 +46,7 @@
       padding: 0 5px;
 
       @media #{$media-size-tablet} {
-          padding: 0;
+        padding: 0;
       }
     }
   }
