@@ -18,6 +18,10 @@
   &__term {
     margin-bottom: 15px;
 
+    a:hover {
+      border-bottom: 1px solid white;
+    }
+
     &-count {
       background: $light-background-secondary;
       font-size: 12px;
