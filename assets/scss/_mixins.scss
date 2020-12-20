@@ -18,3 +18,17 @@
     }
   }
 }
+
+@mixin a-hover-themed {
+  a:hover {
+    border-bottom: none;
+    text-shadow: -1px -1px 0 $light-color, 0 -2px 0 $light-color-secondary,
+      2px 2px 1px $light-color-secondary, 4px 4px 1px $light-color-secondary !important;
+
+    .dark-theme & {
+      border-bottom: none;
+      text-shadow: -1px -1px 0 $index-title-color, 0 -2px 0 $index-title-drop,
+        2px 2px 1px $index-title-drop, 4px 4px 1px $index-title-drop !important;
+    }
+  }
+}

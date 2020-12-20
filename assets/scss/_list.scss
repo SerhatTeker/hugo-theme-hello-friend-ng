@@ -53,6 +53,7 @@
 
     &-item {
       border-bottom: 1px grey dashed;
+      @include a-hover-themed;
 
       a {
         display: flex;
@@ -62,14 +63,6 @@
         text-decoration: none;
       }
 
-      a:hover {
-        .dark-theme & {
-          border-bottom: none;
-          text-shadow: -1px -1px 0 $index-title-color,
-            0 -2px 0 $index-title-drop, 2px 2px 1px $index-title-drop,
-            4px 4px 1px $index-title-drop !important;
-        }
-      }
     }
 
     &-day {
