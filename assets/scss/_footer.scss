@@ -2,10 +2,8 @@
   padding: 40px 20px;
   flex-grow: 0;
   color: $light-color-secondary;
+  @include a-hover;
 
-  a:hover {
-    border-bottom: 1px solid white;
-  }
 
   &__inner {
     display: flex;

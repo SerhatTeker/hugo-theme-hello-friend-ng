@@ -51,14 +51,12 @@
     margin-bottom: 20px;
     font-size: 1rem;
     opacity: 0.5;
+    @include a-hover;
 
     a {
       text-decoration: underline;
     }
 
-    a:hover {
-      border-bottom: 1px solid white;
-    }
   }
 
   &-content {
@@ -67,10 +65,8 @@
 
   &-info {
     margin-top: 40px;
+    @include a-hover;
 
-    a:hover {
-      border-bottom: 1px solid white;
-    }
   }
 
   &-portrait {

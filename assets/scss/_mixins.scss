@@ -1,3 +1,20 @@
 @mixin dimmed {
-  opacity: .6;
+  opacity: 0.6;
+}
+
+@mixin a-hover {
+  a:hover {
+    text-decoration: none;
+    font-weight: 900;
+    // border-bottom: 1px solid white;
+  }
+}
+
+@mixin p-hover {
+  p {
+    a:hover {
+      text-decoration: none;
+      font-weight: 900;
+    }
+  }
 }

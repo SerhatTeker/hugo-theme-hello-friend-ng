@@ -270,12 +270,8 @@ ol ol {
   align-items: center;
   justify-content: center;
   margin: 0;
+  @include p-hover;
 
-  p {
-    a:hover {
-      border-bottom: 1px solid white;
-    }
-  }
 
   @media #{$media-size-phone} {
     margin-top: 0;
