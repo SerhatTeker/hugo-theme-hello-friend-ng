@@ -1,7 +1,8 @@
 {{ $main := resources.Get "js/main.js" }}
+{{ $copy := resources.Get "js/copy.js" }}
 {{ $menu := resources.Get "js/menu.js" }}
 {{ $theme := resources.Get "js/theme.js" }}
-{{ $secureJS := slice $main $menu $theme | resources.Concat "bundle.js" | resources.Minify | resources.Fingerprint "sha512" }}
+{{ $secureJS := slice $main $copy $menu $theme | resources.Concat "bundle.js" | resources.Minify | resources.Fingerprint "sha512" }}
 <script type="text/javascript" src="{{ $secureJS.RelPermalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
 
 {{- if .Site.GoogleAnalytics }}
