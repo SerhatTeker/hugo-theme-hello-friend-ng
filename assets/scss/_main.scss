@@ -172,7 +172,7 @@ figure {
 }
 
 code {
-  font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   font-display: auto;
   font-feature-settings: normal;
   background: $light-background-secondary;
@@ -187,6 +187,8 @@ code {
   }
 }
 
+/* Highlight */
+
 .highlight > div {
   background: $pre-code-background;
 
@@ -196,6 +198,30 @@ code {
   padding: 1rem;
   // border-radius: 1rem;
 }
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #ccc;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+
+}
+
+
 
 pre {
   background: $pre-code-background;
@@ -220,6 +246,7 @@ pre {
     }
   }
 }
+/* end Highlight */
 
 blockquote {
   border-left: 2px solid;
@@ -347,4 +374,3 @@ hr {
   text-decoration: none;
   z-index: 100000;
 }
-
