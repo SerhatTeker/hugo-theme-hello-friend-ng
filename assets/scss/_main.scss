@@ -187,9 +187,18 @@ code {
   }
 }
 
+.highlight > div {
+  background: $pre-code-background;
+
+}
+.highlight > pre {
+  margin: 0 0 2rem;
+  padding: 1rem;
+  // border-radius: 1rem;
+}
+
 pre {
-  background: #212020;
-  padding: 10px 10px 10px 20px;
+  background: $pre-code-background;
   border-radius: 8px;
   font-size: 0.95rem;
   overflow: auto;
@@ -272,7 +281,6 @@ ol ol {
   margin: 0;
   @include p-hover;
 
-
   @media #{$media-size-phone} {
     margin-top: 0;
   }
@@ -339,3 +347,4 @@ hr {
   text-decoration: none;
   z-index: 100000;
 }
+
