@@ -1,0 +1,53 @@
+#spotlight {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 93%;
+  margin: auto;
+  font-size: 1.5rem;
+}
+#spotlight.error-404 {
+  flex-direction: row;
+  line-height: normal;
+}
+p.img-404 {
+  margin: 0;
+}
+p.img-404 svg {
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+}
+.banner-404 {
+  margin-left: 2em;
+}
+.banner-404 h1 {
+  font-size: 3em;
+  margin: 0.5rem 0;
+}
+.banner-404 p {
+  margin-top: 0;
+}
+.banner-404 .btn-404 {
+  font-size: 0.8em;
+}
+.banner-404 .btn-404 a {
+  display: inline-block;
+  border: 2px solid #e8eef2;
+  border-radius: 5px;
+  padding: 5px;
+  transition-property: color, border-color;
+}
+.banner-404 .btn-404 a {
+  margin-right: 1em;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.banner-404 .btn-404 a:hover {
+  border-color: #fff;
+}
+.banner-404 .btn-404 a svg {
+  margin-right: 0.5em;
+}
