@@ -1,0 +1,80 @@
+.related {
+  width: 100%;
+  max-width: 800px;
+  text-align: left;
+  // padding: 20px 20px 20px 0;
+
+  @media #{$media-size-tablet} {
+    max-width: 660px;
+  }
+
+  &:not(:last-of-type) {
+    border-bottom: 1px dashed $light-border-color;
+
+    .dark-theme & {
+      border-color: $dark-border-color;
+    }
+  }
+
+  &-meta {
+    font-size: 1rem;
+    margin-bottom: 10px;
+
+    @media #{$media-size-phone} {
+      font-size: 0.85rem;
+    }
+  }
+
+  &-title {
+    font-size: 1.5;
+    margin: 10px 0 10px 0;
+    @include a-hover-themed;
+
+    @media #{$media-size-phone} {
+      font-size: 2rem;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &-tags {
+    display: block;
+    margin-bottom: 10px;
+    opacity: 0.5;
+    @include a-hover;
+
+    a {
+      text-decoration: underline;
+    }
+
+  }
+
+  &-content {
+    margin-bottom: 10px;
+  }
+
+  &-info {
+    // margin-top: 40px;
+    @include a-hover;
+
+  }
+
+}
+
+.post--regulation {
+  h1 {
+    justify-content: center;
+  }
+
+  h2 {
+    justify-content: center;
+    margin-bottom: 10px;
+
+    & + h2 {
+      margin-top: -10px;
+      margin-bottom: 20px;
+    }
+  }
+}
