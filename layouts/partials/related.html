@@ -1,0 +1,41 @@
+{{ $related := .Site.RegularPages.Related . | first 3 }}
+{{ with $related }}
+
+<div class="related">
+  {{ range . }}
+  <div class="related on-list">
+    <h3 class="related-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h3>
+
+    {{ if .Params.tags }}
+    <span class="related-tags">
+      {{ range .Params.tags }}
+      #<a href="{{ (urlize (printf " tags/%s" . )) | absURL }}/">{{ . }}</a>&nbsp;
+      {{ end }}
+    </span>
+    {{ end }}
+
+    <div class="related-content">
+      {{ with .Description }}
+      {{ . | markdownify }}
+      {{ else }}
+      {{ if .Truncated }}
+      {{ .Summary | markdownify }}
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+
+<div class="backpost">
+  <div class="backpost__buttons">
+    <span class="button previous">
+      <a href="{{ "post" | absLangURL }}">
+        <span class="button__icon"><< </span>
+            <span class="button__text">All Posts</span>
+      </a>
+    </span>
+  </div>
+</div>
+
+</div>
+{{ end }}
