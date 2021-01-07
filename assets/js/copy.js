@@ -1,7 +1,7 @@
 (() => {
-  'use strict';
+  "use strict";
 
-  if(!document.queryCommandSupported('copy')) {
+  if (!document.queryCommandSupported("copy")) {
     return;
   }
 
@@ -19,7 +19,14 @@
       // Skip the title.
       range.selectNodeContents(node.children[1]);
     } else {
-      range.selectNodeContents(node);
+      // ignore linenumbers
+      let _ln = node.getElementsByClassName("chroma");
+      let _node = node.getElementsByTagName("pre")[1]
+      if (_ln.length >= 1) {
+        range.selectNodeContents(_node);
+      } else {
+        range.selectNodeContents(node);
+      }
     }
     selection.removeAllRanges();
     selection.addRange(range);
@@ -32,16 +39,16 @@
     copyBtn.textContent = "Copy";
 
     let codeEl = containerEl.firstElementChild;
-    copyBtn.addEventListener('click', () => {
+    copyBtn.addEventListener("click", () => {
       try {
         let selection = selectText(codeEl);
-        document.execCommand('copy');
+        document.execCommand("copy");
         selection.removeAllRanges();
 
-        flashCopyMessage(copyBtn, 'Copied!')
-      } catch(e) {
+        flashCopyMessage(copyBtn, "Copied!");
+      } catch (e) {
         console && console.log(e);
-        flashCopyMessage(copyBtn, 'Failed :\'(')
+        flashCopyMessage(copyBtn, "Failed :'(");
       }
     });
 
@@ -49,6 +56,6 @@
   }
 
   // Add copy button to code blocks
-  let highlightBlocks = document.getElementsByClassName('highlight');
+  let highlightBlocks = document.getElementsByClassName("highlight");
   Array.prototype.forEach.call(highlightBlocks, addCopyButton);
 })();
