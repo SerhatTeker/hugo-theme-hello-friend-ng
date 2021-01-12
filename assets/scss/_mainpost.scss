@@ -60,6 +60,15 @@
   &-info {
     margin-top: 40px;
     @include a-hover;
+  }
+
+  &-social {
+    a svg {
+      color: inherit;
+    }
+    a svg:hover {
+      color: white;
+    }
 
   }
 
