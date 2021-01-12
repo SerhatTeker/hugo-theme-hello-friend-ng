@@ -25,6 +25,10 @@
     font-size: 1rem;
     color: $light-color-secondary;
 
+    svg:hover {
+      color: white;
+    }
+
     @media #{$media-size-tablet} {
       flex-direction: column;
       margin-top: 10px;
