@@ -21,7 +21,7 @@
     } else {
       // ignore linenumbers
       let _ln = node.getElementsByClassName("chroma");
-      let _node = node.getElementsByTagName("pre")[1]
+      let _node = node.getElementsByTagName("pre")[1];
       if (_ln.length >= 1) {
         range.selectNodeContents(_node);
       } else {
