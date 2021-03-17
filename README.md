@@ -181,7 +181,7 @@ Just edit it. You don't need any node stuff.
 ## Sponsoring
 
 If you like my work and if you think this project is worth to support it, just <br />
-<a href="https://www.buymeacoffee.com/serhatteker" target="_blank"><img src="https://res.cloudinary.com/panr/image/upload/v1579374705/buymeacoffee_y6yvov.svg" alt="Buy Me A Coffee" ></a>
+<a href="https://tech.serhatteker.com/coffee/" target="_blank"><img src="https://res.cloudinary.com/panr/image/upload/v1579374705/buymeacoffee_y6yvov.svg" alt="Buy Me A Coffee" ></a>
 
 ## Licence
 
@@ -193,4 +193,3 @@ The theme is released under the MIT License. Check the [original theme license](
 - **Radosław Kozieł** - *Initial works* - [Panr](https://github.com/panr)
 - **Track3** - *Initial works* - [Track3](https://github.com/Track3/hermit)
 - **Djordje Atlialp** - *Based on* - [Rhazdon](https://github.com/rhazdon)
-
